@@ -1,0 +1,8 @@
+mixin box(image, description, category, title, content)
+    .box
+        .box__img: img(src="images/"+image, alt=description)
+        .box__content
+            span.box__category=category
+            h3=title
+            p=content
+            a Read more

@@ -1,0 +1,22 @@
+extend components/template.pug
+block content
+    body
+        section.touristic--place
+            .touristic--place__img: img(src="images/huanuco.jpg", alt="Huanuco City")
+            .touristic--place__information
+                span.touristic--place__category Tourism
+                h1.touristic--place__title Huanuco City, come here and discover the pretty places does it have
+            .touristic--place__typical--animal
+                img(src="images/ronsoco.jpg", alt="Ronsoco Animal")
+                span.touristic--place__animal--title Typical animal
+                span.touristic--place__name Ronsoco
+        article.main--article
+            p.main--article__intro Huánuco department is located in the central part of Peru, between the western mountain range and the Ucayali River. Huánuco has a bumpy relief. It has snowfalls, mountain ranges, warm valleys and Amazon rainforests, which attract tourists and walkers. 
+            p The height of huanuqueño territory ranges from 80 to 6000 m.s.n.m. The climate of the department of Huanuco is temperate with an average annual temperature of 20oC.
+            p The department of Huánuco borders in the north with the departments of La Libertad, San Martín, Loreto and Ucayali; by The department of Huánuco borders in the north with the departments of La Libertad, San Martín, Loreto and Ucayali; east with Ucayali department; to the south with the department of Pasco and to the west with the departments of Lima and Ancash. Huánuco has a territorial area of 35,315 km2 and its population exceeds 600 thousand inhabitants. to the south with the department of Pasco and to the west with the departments of Lima and Ancash. Huánuco has a territorial area of 35,315 km2 and its population exceeds 600 thousand inhabitants.
+            p The capital of huánuco department is the city of Huánuco. Among the other major cities are Tingo María, Dos de Mayo, Ambo, Leoncio Prado and Pachitea. In Huánuco you will find everything to relax, have fun, learn more about Peruvian culture, enjoy adventure tourism and its rich meals and your visit in this beautiful apartment will be unforgettable.
+            h2 No te pierdas...
+        section.container--boxes
+            +box("cajamarca.jpg", "Cajamarca City", "Tourism", "there are many turistic places here and delicious food, come and discover it!", "El departamento del Cajamarca se encuentra ubicado al norte del territorio peruano, en la cadena occidental de los Andes y abarca zonas de sierra y selva. El origen de la ciudad de Cajamarca se inicia aproximadamente 3 mil años atrás con los primeros grupos humanos Huacaloma, Layzón, Cumbe Mayo y Otuzco." )
+            +box("tingomaria.jpg", "Tingo Maria City", "Tourism", "Do you want adventure? there are exotic animals and delicious food", "Tingo María is characterized by having a hill, in which lies the figure of a beautiful woman called 'sleeping beauty' who represents a legend on whose feet circulate the Huallaga and Monsoon rivers circulate. This city is a focus of important tourist attraction, which presents a beautiful and typical jungle landscape.")
+            +box("lamerced.jpg", "La Merced City", "Tourism", "¿Te encanta el café? aquí lo puedes encontrar y disfrutar de los lugares y la comida delisiosa que La Merced te ofrece", "La Merced es conocida como la “Ciudad Cafetalera”, aquella se encuentra en la Selva Central del país, dentro de la provincia de Chanchamayo, en Junín, y es capital tanto del distrito  homónimo en el que se ubica, como de la provincia de Chanchamayo. Pese a ser una ciudad en la Amazonía del Perú, La Merced cuenta en su núcleo urbano con distintos alojamientos que si bien no son hoteles de lujo, brindarán al viajero la seguridad y estabilidad que no conseguirán acampando en las zonas rurales del territorio, y a muy bajos costos.")    
