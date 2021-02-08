@@ -2,7 +2,9 @@ mixin box(image, description, category, title, content)
     .box
         .box__img: img(src="images/"+image, alt=description)
         .box__content
-            span.box__category=category
-            h3=title
-            p=content
-            a Read more
+            .box__content--information 
+                span.box__content--information__category=category
+                h3=title
+                p=content
+            .box__content--read_more
+                a Read more

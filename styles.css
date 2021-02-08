@@ -6,6 +6,7 @@ body {
   padding: 24px 48px 64px 48px;
   font-family: 'Lato', sans-serif;
   text-align: justify;
+  background: #777777;
 }
 h1,
 h2,
@@ -20,6 +21,7 @@ h3 {
   position: relative;
   background: white;
   text-shadow: 4px 4px 4px #333333;
+  background: #777777;
 }
 .touristic--place__img {
   width: 1320px;
@@ -29,7 +31,10 @@ h3 {
   width: 100%;
   height: 624px;
   object-fit: cover;
-  border: 4px solid #888888;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: #aaaaaa;
+  box-shadow: 1px 1px 4px 4px #aaaaaa;
   border-radius: 8px;
 }
 .touristic--place__information {
@@ -86,6 +91,7 @@ h3 {
   opacity: 96%;
 }
 .main--article {
+  color: white;
   max-width: 660px;
   margin: 0 auto;
 }
@@ -93,6 +99,7 @@ h3 {
   font-size: 32px;
 }
 .main--article h2 {
+  color: #cccccc;
   margin: 40px 0;
   font-size: 40px;
   text-align: center;
@@ -107,7 +114,7 @@ h3 {
   max-width: 430px;
 }
 .box__img {
-  max-width: 400px;
+  max-width: 96%;
   height: 320px;
 }
 .box__img img {
@@ -115,15 +122,40 @@ h3 {
   height: 100%;
 }
 .box__content {
-  max-width: 400px;
-  padding: 25px;
+  max-width: 96%;
+  height: 416px;
+  padding: 16px 24px;
   background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.box span {
-  color: #EEF1F7;
+.box__content--information h3 {
+  padding: 8px 0 0 0;
+}
+.box__content--information__category {
+  color: #04a004;
   font-family: 'Oswald', sans-serif;
+  margin: 0 0 16px 0;
+  font-weight: bold;
+  font-style: normal;
 }
-.box a {
+.box__content--read_more {
+  width: 96%;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.box__content--read_more a {
   text-decoration: none;
   color: #012179;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+.box__content--read_more a:hover {
+  color: #04a004;
 }
